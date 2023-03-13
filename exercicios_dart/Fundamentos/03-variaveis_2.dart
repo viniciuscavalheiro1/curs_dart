@@ -1,9 +1,9 @@
-void main() {
-  var a = 10;
-  var b = 123.3;
+import 'dart:io';
 
-  print(a + b);
-  print(a.runtimeType);
+void main() {
+  var a, b;
+  a = stdin.readLineSync()!;
+  b = stdin.readLineSync()!;
 
   if (b is double) {
     print('B é double');
